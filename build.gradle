@@ -1,0 +1,101 @@
+//plugins {
+//    id 'java'
+//    id 'nu.studer.jooq' version '8.1'
+//}
+//
+//group 'org.example'
+//version '1.0-SNAPSHOT'
+//
+//jooq {
+//    // Configure the database connection
+//    jdbc {
+//        driver = 'com.mysql.cj.jdbc.Driver'
+//        url = 'jdbc:mysql://127.0.0.1:3306/learn-jooq?serverTimezone=GMT%2B8'
+//        user = 'root'
+//        password = 'pass'
+//    }
+//
+//    // Configure the code generation
+//    generator {
+//        database {
+//            name = 'org.jooq.meta.mysql.MySQLDatabase'
+//            inputSchema = 'Student'
+//        }
+//        target {
+//            packageName = 'com.example.generated'
+//            directory = 'src/main/java'
+//        }
+//    }
+//}
+//
+//repositories {
+//    mavenCentral()
+//}
+//
+//dependencies {
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+//    implementation 'org.jooq:jooq:3.15.2'
+//    implementation 'org.jooq:jooq-codegen:3.15.2'
+//    implementation 'org.jooq:jooq-meta:3.15.2'
+//    jooqGenerator 'com.h2database:h2:2.1.214'
+//}
+//
+//test {
+//    useJUnitPlatform()
+//}
+
+import groovy.xml.MarkupBuilder
+import org.jooq.codegen.GenerationTool
+apply plugin: 'java'
+group 'com.misssad'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation 'org.jooq:jooq:3.12.2'
+    implementation 'org.jooq:jooq-meta:3.12.2'
+    implementation 'org.jooq:jooq-codegen:3.12.2'
+    implementation 'mysql:mysql-connector-java:8.0.15'
+}
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'org.jooq:jooq-codegen:3.12.2'
+        classpath('mysql:mysql-connector-java:8.0.15')
+    }
+}
+task jooqCodeGenerate {
+    def writer = new StringWriter()
+    def xml = new MarkupBuilder(writer).configuration('xmlns': 'http://www.jooq.org/xsd/jooq-codegen-3.12.0.xsd'){
+        jdbc() {
+//            driver('com.mysql.jdbc.Driver')
+            driver('com.mysql.cj.jdbc.Driver ')
+            url('jdbc:mysql://localhost:3306/Student?useSSL=false&useUnicode=true&characterEncoding=UTF-8')
+            user('root')
+            password('pass')
+        }
+        generator() {
+            database() { //不配这一项会生成所有数据库对应的代码
+                name('org.jooq.meta.mysql.MySQLDatabase')
+                inputSchema('Student') //指定的数据库
+                includes('.*')
+                excludes()
+            }
+            generate([:]) {
+                pojos true
+                daos true
+            }
+            target() {
+                packageName('jooq') //生成的具体目录
+                directory('src/main/java') //生成的根目录
+            }
+        }
+    }
+    GenerationTool.generate(writer.toString())
+}
