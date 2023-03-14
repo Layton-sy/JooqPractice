@@ -1,4 +1,4 @@
-package org.example;
+package example;
 
 import jooq.tables.records.TeacherRecord;
 import org.jooq.DSLContext;
@@ -6,14 +6,15 @@ import org.jooq.Record;
 import org.jooq.Result;
 import org.jooq.SQLDialect;
 import org.jooq.impl.DSL;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.List;
 
-import static jooq.Tables.TEACHER;
+import static jooq.tables.Teacher.TEACHER;
 
-public class JooqQueryExmple {
+public class QueryExample {
     public static void main(String[] args) {
         String jdbcUrl = "jdbc:mysql://localhost:3306/learn-jooq?serverTimezone=GMT%2B8&useSSL=false";
         String jdbcUsername = "root";

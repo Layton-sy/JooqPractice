@@ -76,14 +76,14 @@ task jooqCodeGenerate {
         jdbc() {
 //            driver('com.mysql.jdbc.Driver')
             driver('com.mysql.cj.jdbc.Driver ')
-            url('jdbc:mysql://localhost:3306/Student?useSSL=false&useUnicode=true&characterEncoding=UTF-8')
+            url('jdbc:mysql://localhost:3306/school?useSSL=false&useUnicode=true&characterEncoding=UTF-8')
             user('root')
             password('pass')
         }
         generator() {
             database() { //不配这一项会生成所有数据库对应的代码
                 name('org.jooq.meta.mysql.MySQLDatabase')
-                inputSchema('Student') //指定的数据库
+                inputSchema('school') //指定的数据库
                 includes('.*')
                 excludes()
             }

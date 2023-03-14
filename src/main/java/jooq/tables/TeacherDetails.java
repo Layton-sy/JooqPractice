@@ -11,7 +11,7 @@ import javax.annotation.processing.Generated;
 
 import jooq.Indexes;
 import jooq.Keys;
-import jooq.Student;
+import jooq.School;
 import jooq.tables.records.TeacherDetailsRecord;
 
 import org.jooq.Field;
@@ -42,10 +42,10 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class TeacherDetails extends TableImpl<TeacherDetailsRecord> {
 
-    private static final long serialVersionUID = -106866327;
+    private static final long serialVersionUID = 1583072829;
 
     /**
-     * The reference instance of <code>Student.teacher_details</code>
+     * The reference instance of <code>school.teacher_details</code>
      */
     public static final TeacherDetails TEACHER_DETAILS = new TeacherDetails();
 
@@ -58,36 +58,36 @@ public class TeacherDetails extends TableImpl<TeacherDetailsRecord> {
     }
 
     /**
-     * The column <code>Student.teacher_details.teacher_id</code>.
+     * The column <code>school.teacher_details.teacher_id</code>.
      */
     public final TableField<TeacherDetailsRecord, Integer> TEACHER_ID = createField(DSL.name("teacher_id"), org.jooq.impl.SQLDataType.INTEGER.nullable(false).identity(true), this, "");
 
     /**
-     * The column <code>Student.teacher_details.address</code>.
+     * The column <code>school.teacher_details.address</code>.
      */
     public final TableField<TeacherDetailsRecord, String> ADDRESS = createField(DSL.name("address"), org.jooq.impl.SQLDataType.VARCHAR(50), this, "");
 
     /**
-     * The column <code>Student.teacher_details.salary</code>.
+     * The column <code>school.teacher_details.salary</code>.
      */
     public final TableField<TeacherDetailsRecord, Integer> SALARY = createField(DSL.name("salary"), org.jooq.impl.SQLDataType.INTEGER, this, "");
 
     /**
-     * Create a <code>Student.teacher_details</code> table reference
+     * Create a <code>school.teacher_details</code> table reference
      */
     public TeacherDetails() {
         this(DSL.name("teacher_details"), null);
     }
 
     /**
-     * Create an aliased <code>Student.teacher_details</code> table reference
+     * Create an aliased <code>school.teacher_details</code> table reference
      */
     public TeacherDetails(String alias) {
         this(DSL.name(alias), TEACHER_DETAILS);
     }
 
     /**
-     * Create an aliased <code>Student.teacher_details</code> table reference
+     * Create an aliased <code>school.teacher_details</code> table reference
      */
     public TeacherDetails(Name alias) {
         this(alias, TEACHER_DETAILS);
@@ -107,7 +107,7 @@ public class TeacherDetails extends TableImpl<TeacherDetailsRecord> {
 
     @Override
     public Schema getSchema() {
-        return Student.STUDENT;
+        return School.SCHOOL;
     }
 
     @Override

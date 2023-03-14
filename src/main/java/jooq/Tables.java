@@ -7,10 +7,11 @@ package jooq;
 import javax.annotation.processing.Generated;
 
 import jooq.tables.Teacher;
+import jooq.tables.TeacherDetails;
 
 
 /**
- * Convenience access to all tables in Student
+ * Convenience access to all tables in school
  */
 @Generated(
     value = {
@@ -23,7 +24,12 @@ import jooq.tables.Teacher;
 public class Tables {
 
     /**
-     * The table <code>Student.teacher</code>.
+     * The table <code>school.teacher</code>.
      */
     public static final Teacher TEACHER = Teacher.TEACHER;
+
+    /**
+     * The table <code>school.teacher_details</code>.
+     */
+    public static final TeacherDetails TEACHER_DETAILS = TeacherDetails.TEACHER_DETAILS;
 }

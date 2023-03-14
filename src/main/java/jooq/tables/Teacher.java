@@ -4,19 +4,27 @@
 package jooq.tables;
 
 
+import java.util.Arrays;
+import java.util.List;
+
 import javax.annotation.processing.Generated;
 
-import jooq.Student;
+import jooq.Indexes;
+import jooq.Keys;
+import jooq.School;
 import jooq.tables.records.TeacherRecord;
 
 import org.jooq.Field;
 import org.jooq.ForeignKey;
+import org.jooq.Identity;
+import org.jooq.Index;
 import org.jooq.Name;
 import org.jooq.Record;
-import org.jooq.Row2;
+import org.jooq.Row3;
 import org.jooq.Schema;
 import org.jooq.Table;
 import org.jooq.TableField;
+import org.jooq.UniqueKey;
 import org.jooq.impl.DSL;
 import org.jooq.impl.TableImpl;
 
@@ -34,10 +42,10 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Teacher extends TableImpl<TeacherRecord> {
 
-    private static final long serialVersionUID = -1708421960;
+    private static final long serialVersionUID = 1032079698;
 
     /**
-     * The reference instance of <code>Student.teacher</code>
+     * The reference instance of <code>school.teacher</code>
      */
     public static final Teacher TEACHER = new Teacher();
 
@@ -50,31 +58,36 @@ public class Teacher extends TableImpl<TeacherRecord> {
     }
 
     /**
-     * The column <code>Student.teacher.name</code>.
+     * The column <code>school.teacher.name</code>.
      */
-    public final TableField<TeacherRecord, String> NAME = createField(DSL.name("name"), org.jooq.impl.SQLDataType.VARCHAR(50).nullable(false), this, "");
+    public final TableField<TeacherRecord, String> NAME = createField(DSL.name("name"), org.jooq.impl.SQLDataType.VARCHAR(50), this, "");
 
     /**
-     * The column <code>Student.teacher.age</code>.
+     * The column <code>school.teacher.age</code>.
      */
     public final TableField<TeacherRecord, Integer> AGE = createField(DSL.name("age"), org.jooq.impl.SQLDataType.INTEGER, this, "");
 
     /**
-     * Create a <code>Student.teacher</code> table reference
+     * The column <code>school.teacher.id</code>.
+     */
+    public final TableField<TeacherRecord, Integer> ID = createField(DSL.name("id"), org.jooq.impl.SQLDataType.INTEGER.nullable(false).identity(true), this, "");
+
+    /**
+     * Create a <code>school.teacher</code> table reference
      */
     public Teacher() {
         this(DSL.name("teacher"), null);
     }
 
     /**
-     * Create an aliased <code>Student.teacher</code> table reference
+     * Create an aliased <code>school.teacher</code> table reference
      */
     public Teacher(String alias) {
         this(DSL.name(alias), TEACHER);
     }
 
     /**
-     * Create an aliased <code>Student.teacher</code> table reference
+     * Create an aliased <code>school.teacher</code> table reference
      */
     public Teacher(Name alias) {
         this(alias, TEACHER);
@@ -94,7 +107,27 @@ public class Teacher extends TableImpl<TeacherRecord> {
 
     @Override
     public Schema getSchema() {
-        return Student.STUDENT;
+        return School.SCHOOL;
+    }
+
+    @Override
+    public List<Index> getIndexes() {
+        return Arrays.<Index>asList(Indexes.TEACHER_PRIMARY);
+    }
+
+    @Override
+    public Identity<TeacherRecord, Integer> getIdentity() {
+        return Keys.IDENTITY_TEACHER;
+    }
+
+    @Override
+    public UniqueKey<TeacherRecord> getPrimaryKey() {
+        return Keys.KEY_TEACHER_PRIMARY;
+    }
+
+    @Override
+    public List<UniqueKey<TeacherRecord>> getKeys() {
+        return Arrays.<UniqueKey<TeacherRecord>>asList(Keys.KEY_TEACHER_PRIMARY);
     }
 
     @Override
@@ -124,11 +157,11 @@ public class Teacher extends TableImpl<TeacherRecord> {
     }
 
     // -------------------------------------------------------------------------
-    // Row2 type methods
+    // Row3 type methods
     // -------------------------------------------------------------------------
 
     @Override
-    public Row2<String, Integer> fieldsRow() {
-        return (Row2) super.fieldsRow();
+    public Row3<String, Integer, Integer> fieldsRow() {
+        return (Row3) super.fieldsRow();
     }
 }

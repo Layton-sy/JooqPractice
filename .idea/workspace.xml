@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72a314b5-a8a3-4919-aeee-46a4a7255ca7" name="Changes" comment="" />
+    <list default="true" id="72a314b5-a8a3-4919-aeee-46a4a7255ca7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/InsertExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/QueryExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example/UpdateExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jooq/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jooq/tables/daos/TeacherDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/jooq/tables/daos/TeacherDetailsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jooq/DefaultCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jooq/DefaultCatalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jooq/Indexes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jooq/Indexes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jooq/Keys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jooq/Keys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jooq/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jooq/Tables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jooq/Tables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jooq/tables/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jooq/tables/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jooq/tables/TeacherDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jooq/tables/TeacherDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jooq/tables/pojos/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jooq/tables/pojos/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jooq/tables/pojos/TeacherDetailsPojo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jooq/tables/pojos/TeacherWithDetailsPojo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jooq/tables/records/TeacherDetailsRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jooq/tables/records/TeacherDetailsRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jooq/tables/records/TeacherRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jooq/tables/records/TeacherRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JooqDeleteExmple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JooqInsertExmple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JooqQueryExmple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JooqUpdateExmple.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,20 +45,169 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jooqPractice" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jooqPractice" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="jooqPractice" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2MoWFwkpB5PLsf8RyK8d3cx318d" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/jiajun.huang/ideaProjects/JooqPractice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
+  <component name="RunManager" selected="Application.UpdateExample">
+    <configuration name="InsertExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.InsertExample" />
+      <module name="jooqPractice.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueryExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.QueryExample" />
+      <module name="jooqPractice.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UpdateExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example.UpdateExample" />
+      <module name="jooqPractice.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JooqPractice [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="JooqPractice [jooqCodeGenerate]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jooqCodeGenerate" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.UpdateExample" />
+        <item itemvalue="Application.QueryExample" />
+        <item itemvalue="Application.InsertExample" />
+        <item itemvalue="Gradle.JooqPractice [jooqCodeGenerate]" />
+        <item itemvalue="Gradle.JooqPractice [dependencies]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,7 +216,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678434315924</updated>
+      <workItem from="1678762010012" duration="739000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

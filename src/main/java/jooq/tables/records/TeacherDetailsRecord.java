@@ -28,45 +28,45 @@ import org.jooq.impl.UpdatableRecordImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class TeacherDetailsRecord extends UpdatableRecordImpl<TeacherDetailsRecord> implements Record3<Integer, String, Integer> {
 
-    private static final long serialVersionUID = 317944595;
+    private static final long serialVersionUID = 766601391;
 
     /**
-     * Setter for <code>Student.teacher_details.teacher_id</code>.
+     * Setter for <code>school.teacher_details.teacher_id</code>.
      */
     public void setTeacherId(Integer value) {
         set(0, value);
     }
 
     /**
-     * Getter for <code>Student.teacher_details.teacher_id</code>.
+     * Getter for <code>school.teacher_details.teacher_id</code>.
      */
     public Integer getTeacherId() {
         return (Integer) get(0);
     }
 
     /**
-     * Setter for <code>Student.teacher_details.address</code>.
+     * Setter for <code>school.teacher_details.address</code>.
      */
     public void setAddress(String value) {
         set(1, value);
     }
 
     /**
-     * Getter for <code>Student.teacher_details.address</code>.
+     * Getter for <code>school.teacher_details.address</code>.
      */
     public String getAddress() {
         return (String) get(1);
     }
 
     /**
-     * Setter for <code>Student.teacher_details.salary</code>.
+     * Setter for <code>school.teacher_details.salary</code>.
      */
     public void setSalary(Integer value) {
         set(2, value);
     }
 
     /**
-     * Getter for <code>Student.teacher_details.salary</code>.
+     * Getter for <code>school.teacher_details.salary</code>.
      */
     public Integer getSalary() {
         return (Integer) get(2);
